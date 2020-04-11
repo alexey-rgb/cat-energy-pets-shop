@@ -1,2 +1,2 @@
-# cat-energy-pets-shop
- this project shows my knowledge of html / less / js
+# cats-energy-pets-shop
+cat-energy/pets shop
