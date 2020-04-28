@@ -1,0 +1,71 @@
+.desription {
+  display       : flex;
+  flex-direction: column;
+}
+
+;
+
+.desription__list {
+  display       : flex;
+  flex-direction: column;
+}
+
+;
+
+.description__title {
+  height     : 38px;
+  margin     : 0 0 0 20px;
+  padding    : 0;
+  font-family: Oswald;
+  font-size  : 36px;
+  font-weight: 400;
+  line-height: 1.67;
+  color      : #111111;
+}
+
+;
+
+.description__item {
+  width      : 195px;
+  height     : 48px;
+  font-family: Arial;
+  font-weight: 400;
+  font-style : normal;
+  line-height: 1.29;
+  color      : #444444;
+  margin     : 20px 0 10px 55px;
+  padding    : 0;
+  position   : relative;
+
+  &&::before {
+    content         : "";
+    position        : absolute;
+    width           : 60px;
+    height          : 60px;
+    background-color: @green;
+    right           : 213px;
+    top             : 4;
+  }
+}
+
+;
+
+.description__item:nth-of-type(1)::before {
+  background         : no-repeat url("../img/sheet-on-green-bg.png") @green;
+  background-position: 17px 15px;
+};
+
+.description__item:nth-of-type(2)::before {
+  background         : no-repeat url("../img/powder-on-green-bg.png") @green;
+  background-position: 17px 15px;
+};
+
+.description__item:nth-of-type(3)::before {
+  background         : no-repeat url("../img/spoon-knife.png") @green;
+  background-position: 17px 15px;
+};
+
+.description__item:nth-of-type(4)::before {
+  background         : no-repeat url("../img/weigher.png") @green;
+  background-position: 17px 15px;
+};

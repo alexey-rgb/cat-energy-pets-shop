@@ -1,0 +1,133 @@
+@media(min-width: 320px) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  };
+
+  .page-header__logo-other-screen {
+    display: none;
+  }
+
+  .page-header__logo-mobile {
+    width: 33px;
+    height: 38px;
+    margin: 11px 0 16px calc((100% - 300px) / 2);
+    padding: 0;
+    position: relative;
+  };
+
+  .page-header__logo-text {
+    width: 101px;
+    height: 18px;
+    margin: 0 0 20px 65px;
+  };
+
+  .page-header__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  };
+
+  .page-header__item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #E6E6E6;
+    min-height: 65px;
+}
+
+  .page-header__item:first-child {
+    border-top: 1px solid #E6E6E6;
+  };
+
+  .page-header__link {
+    align-self: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+  };
+}
+
+@media(min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+  };
+
+  .page-header::after {
+    display: none;
+  };
+
+  .page-header__logo-mobile {
+    display: none;
+  };
+
+  .page-header__logo-other-screen {
+    display: block;
+    width: 163px;
+    height: 45px;
+    margin: 31px 0 0 5vw;
+    padding: 0;
+  };
+
+  .page-header__logo-text {
+    display: none;
+  }
+
+  .page-header__navigation {
+    width: 50vw;
+    padding: 0;
+    margin: 23px 0 0 calc((100% - 650px)/2);
+    text-transform: uppercase;
+  };
+
+  .page-header__list {
+    flex-direction: row;
+    justify-content: space-between;
+    //font-size: 18px;
+  };
+
+  .page-header__item {
+    border: none;
+  };
+
+  .page-header__link {
+    font-size: 2vw;
+  };
+
+  .page-header__link--active {
+    border-bottom: 1px solid #000000;
+  };
+
+  .page-header__item:first-child {
+    border-top: none;
+  };
+}
+
+@media(min-width: 1440px) {
+
+.page-header__logo {
+  width: 202px;
+  height: 59px;
+  margin: 54px 0 0 110px;
+  padding: 0;
+};
+
+.page-header__navigation {
+  width: 42vw;
+  padding: 0;
+  margin: 23px 0 0 calc((100% - 354px)/2);
+  z-index: 3;
+};
+
+.page-header__link {
+  font-size: 20px;
+  color: #ffffff;
+};
+
+.page-header__link--active {
+  border-color: #FFFFFF;
+}
+}
