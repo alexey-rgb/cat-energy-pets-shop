@@ -1,71 +1,154 @@
-.desription {
-  display       : flex;
-  flex-direction: column;
+@media (min-width: 320px) {
+
+  .desription {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  ;
+
+  .desription__list {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  ;
+
+  .description__title {
+    min-height : 38px;
+    margin     : 0 0 0 20px;
+    padding    : 0;
+    font-family: Oswald;
+    font-size  : 36px;
+    font-weight: 400;
+    line-height: 1.67;
+    color      : #111111;
+  }
+
+  ;
+
+  .description__item {
+    width      : 195px;
+    min-height : 48px;
+    font-family: Arial;
+    font-weight: 400;
+    font-style : normal;
+    line-height: 1.29;
+    color      : #444444;
+    margin     : 20px 0 10px 55px;
+    padding    : 0;
+    position   : relative;
+
+    &&::before {
+      content         : "";
+      position        : absolute;
+      width           : 60px;
+      min-height      : 60px;
+      background-color: @green;
+      right           : 213px;
+      top             : 4;
+    }
+  }
+
+  ;
+
+  .description__item:nth-of-type(1)::before {
+    background         : no-repeat url("../img/sheet-on-green-bg.png") @green;
+    background-position: 17px 15px;
+  }
+
+  ;
+
+  .description__item:nth-of-type(2)::before {
+    background         : no-repeat url("../img/powder-on-green-bg.png") @green;
+    background-position: 17px 15px;
+  }
+
+  ;
+
+  .description__item:nth-of-type(3)::before {
+    background         : no-repeat url("../img/spoon-knife.png") @green;
+    background-position: 17px 15px;
+  }
+
+  ;
+
+  .description__item:nth-of-type(4)::before {
+    background         : no-repeat url("../img/weigher.png") @green;
+    background-position: 17px 15px;
+  }
+
+  ;
 }
 
-;
+@media (min-width: 768px) {
 
-.desription__list {
-  display       : flex;
-  flex-direction: column;
-}
+  .desription {
+    margin-top: 50px;
+  }
 
-;
+  ;
 
-.description__title {
-  height     : 38px;
-  margin     : 0 0 0 20px;
-  padding    : 0;
-  font-family: Oswald;
-  font-size  : 36px;
-  font-weight: 400;
-  line-height: 1.67;
-  color      : #111111;
-}
+  .description__title {
+    font-size: 60px;
+    margin   : 0 0 0 38px;
+  }
 
-;
+  .desription__list {
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    width          : 700px;
+  }
 
-.description__item {
-  width      : 195px;
-  height     : 48px;
-  font-family: Arial;
-  font-weight: 400;
-  font-style : normal;
-  line-height: 1.29;
-  color      : #444444;
-  margin     : 20px 0 10px 55px;
-  padding    : 0;
-  position   : relative;
+  ;
 
-  &&::before {
-    content         : "";
-    position        : absolute;
-    width           : 60px;
-    height          : 60px;
-    background-color: @green;
-    right           : 213px;
-    top             : 4;
+  .description__item {
+    width      : 245px;
+    min-height : 210px;
+    margin     : 70px 0 90px 0;
+    padding    : 100px 0 0 0;
+    font-size  : 16px;
+    line-height: 1.5;
+
+    &&::before {
+      width              : 80px;
+      min-height         : 80px;
+      bottom             : 130px;
+      left               : 0;
+      background-position: 24px 23px;
+    }
+  }
+
+  .description__item:nth-of-type(1) {
+    background     : no-repeat 75% 0 url("../img/numberOne.png");
+    background-size: contain;
+  }
+
+  .description__item:nth-of-type(2) {
+    background     : no-repeat 75% 0 url("../img/numberTwo.png");
+    background-size: contain;
+  }
+
+  .description__item:nth-of-type(3) {
+    background     : no-repeat 75% 0 url("../img/numberThree.png");
+    background-size: contain;
+  }
+
+  .description__item:nth-of-type(4) {
+    background     : no-repeat 75% 0 url("../img/numberFour.png");
+    background-size: contain;
   }
 }
 
-;
+@media(min-width: 1440px) {
+  .desription__list {
+    width     : 1300px;
+    align-self: center;
+  }
 
-.description__item:nth-of-type(1)::before {
-  background         : no-repeat url("../img/sheet-on-green-bg.png") @green;
-  background-position: 17px 15px;
-};
+  .description__title {
+    margin: 0 0 0 77px;
+  }
 
-.description__item:nth-of-type(2)::before {
-  background         : no-repeat url("../img/powder-on-green-bg.png") @green;
-  background-position: 17px 15px;
-};
-
-.description__item:nth-of-type(3)::before {
-  background         : no-repeat url("../img/spoon-knife.png") @green;
-  background-position: 17px 15px;
-};
-
-.description__item:nth-of-type(4)::before {
-  background         : no-repeat url("../img/weigher.png") @green;
-  background-position: 17px 15px;
-};
+}

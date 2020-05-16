@@ -1,33 +1,33 @@
 @media(min-width: 320px) {
 
   .after-header__message {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    min-height: 500px;
-    margin: 0 auto;
-    background: no-repeat  url("../img/food-box-desktop@1x.png"),
-     no-repeat url("../img/index-background-desktop.png");
-    background-size: 100% auto, 100% auto;
+    min-height    : 500px;
+    margin        : 0 auto;
+    background    : no-repeat url("../img/food-box-desktop@1x.png"),
+      no-repeat url("../img/index-background-desktop.png");
+    background-size      : 100% auto, 100% auto;
     background-position-y: 170px, 0;
-    text-align: center;
-}
+    text-align           : center;
+  }
 
-.after-header__title {
-  width: 80vw;
-  margin: 30px auto 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 400;
-}
+  .after-header__title {
+    width      : 80vw;
+    margin     : 30px auto 0;
+    padding    : 0;
+    color      : #fff;
+    text-align : center;
+    font-size  : 36px;
+    line-height: 1;
+    font-weight: 400;
+  }
 
-.after-header__text {
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
+  .after-header__text {
+    font-size     : 14px;
+    color         : #ffffff;
+    text-transform: uppercase;
+  }
 
   .after-header__food-box {
     display: none;
@@ -42,96 +42,112 @@
 @media(min-width: 768px) {
 
   .after-header__message {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    min-height: 100px;
-    margin: 50px 0 0 calc((100% - 600px)/2);
-    z-index: 2;
-    background: unset;
-    text-align: unset;
+    min-height    : 100px;
+    margin        : 50px 0 0 calc((100% - 600px)/2);
+    z-index       : 2;
+    background    : unset;
+    text-align    : unset;
+
     &::after {
       display: none;
     }
   }
 
   .after-header__title {
-    width: 50vw;
-    margin: 0;
-    padding: 0;
-    font-size: 7vw;
+    width      : 50vw;
+    margin     : 0;
+    padding    : 0;
+    font-size  : 7vw;
     line-height: 1;
-    color: #000000;
-    text-align: start;
-  };
+    color      : #000000;
+    text-align : start;
+  }
+
+  ;
 
   .after-header__text {
-    font-size: 3vw;
-    line-height: 1;
+    font-size     : 3vw;
+    line-height   : 1;
     text-transform: uppercase;
-    margin: 40px 0 53px 0;
-    color: #000000;
-  };
+    margin        : 40px 0 53px 0;
+    color         : #000000;
+  }
+
+  ;
 
   .after-header__link {
     align-self: inherit;
-    margin: 0;
-    z-index: 2;
+    margin    : 0;
+    z-index   : 2;
   }
 
   .after-header__food-box {
     display: block;
-    margin: -79px 0 0 calc((100% - 830px)/2);
-    width: 709px;
-    height: 609px;
-    color: #000000;
-  };
+    margin : -79px 0 0 calc((100% - 830px)/2);
+    width  : 709px;
+    height : 609px;
+    color  : #000000;
+  }
+
+  ;
 }
 
 @media(min-width: 1440px) {
-.after-header {
-  display: flex;
-  flex-direction: row;
-  min-height: 700px;
-};
-
-.after-header__message {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 0 0 calc((100% - 1100px)/2);
-  z-index: 1;
-
-  &::after {
-    display: block;
-    content: "";
-    background: no-repeat url("../img/index-background-desktop.png");
-    background-size: 100% auto;
-    position: absolute;
-    left: calc((100% - 3px)/2);
-    bottom: 124px;
-    width: 50vw;
-    height: 48vw;
+  .after-header {
+    display       : flex;
+    flex-direction: row;
+    min-height    : 700px;
   }
-};
 
-.after-header__title {
-  width: 420px;
-  font-size: 60px;
-  margin: 0;
-  padding: 0;
-};
+  ;
 
-.after-header__text {
-  font-size: 20px;
-  line-height: 1;
-  text-transform: uppercase;
-  margin: 40px 0 53px 0;
-};
+  .after-header__message {
+    display       : flex;
+    flex-direction: column;
+    margin        : 100px 0 0 calc((100% - 1100px)/2);
+    z-index       : 1;
 
- .after-header__food-box {
-  margin: 22px 0 0 -46px;
-  width: 552px;
-  height: 499px;
- z-index: 2;
-};
+    &::after {
+      display        : block;
+      content        : "";
+      background     : no-repeat url("../img/index-background-desktop.png");
+      background-size: 100% auto;
+      position       : absolute;
+      left           : calc((100% - 3px)/2);
+      top            : 0;
+      width          : 50vw;
+      min-height: 696px;
+    }
+  }
+
+  ;
+
+  .after-header__title {
+    width    : 420px;
+    font-size: 60px;
+    margin   : 0;
+    padding  : 0;
+  }
+
+  ;
+
+  .after-header__text {
+    font-size     : 20px;
+    line-height   : 1;
+    text-transform: uppercase;
+    margin        : 40px 0 53px 0;
+  }
+
+  ;
+
+  .after-header__food-box {
+    margin : 22px 0 0 -46px;
+    width  : 552px;
+    height : 499px;
+    z-index: 2;
+  }
+
+  ;
 }
-

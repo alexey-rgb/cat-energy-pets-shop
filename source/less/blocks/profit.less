@@ -1,111 +1,223 @@
-.profit__flex-wrapper {
-  display: flex;
-  flex-direction: column;
-};
+@media(min-width: 320px) {
 
-.profit__flex-block {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 90vw;
-  height: 266px;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-};
-
-.profit__title {
-  align-self: center;
-  margin-left: 20px;
-  padding: 0;
-  font-family: @font;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-
-
-  &&--first {
-    position: relative;
+  .profit__flex-wrapper {
+    display       : flex;
+    flex-direction: column;
   }
 
-  &&--second {
-    position: relative;
+  ;
+
+  .profit__flex-block {
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
+    width           : 90vw;
+    height          : 266px;
+    margin          : 0 auto;
+    background-color: #f2f2f2;
   }
 
-  &&--first::before {
-    content: "";
-    position: absolute;
-    right: 150px;
-    top: 0;
-    width: 50px;
-    height: 51px;
-    background: no-repeat url("../img/sitting-panther.png") @green;
-     background-size: 53% auto;
-     background-position: 9px 4px;
-     border: 1px solid @green;
-     border-radius: 50%;
+  ;
+
+  .profit__flex-block:first-child {
+    margin-bottom: 20px;
   }
 
-  &&--second::before {
-    content: "";
-    position: absolute;
-    right: 150px;
-    top: 0;
-    width: 50px;
-    height: 51px;
-    background: no-repeat url("../img/going-panther.png") @green;
-    background-size: 89% auto,100% auto;
-    background-position: 2px 15px;
-    border: 1px solid @green;
-    border-radius: 50%;
+  .profit__title {
+    align-self    : center;
+    margin-left   : 20px;
+    padding       : 0;
+    font-family   : @font;
+    font-size     : 24px;
+    font-weight   : 400;
+    text-transform: uppercase;
+
+
+    &&--first {
+      position: relative;
+    }
+
+    &&--second {
+      position: relative;
+    }
+
+    &&--first::before {
+      content            : "";
+      position           : absolute;
+      right              : 150px;
+      top                : 0;
+      width              : 50px;
+      height             : 51px;
+      background         : no-repeat url("../img/sitting-panther.png") @green;
+      background-size    : 53% auto;
+      background-position: 9px 4px;
+      border             : 1px solid @green;
+      border-radius      : 50%;
+    }
+
+    &&--second::before {
+      content            : "";
+      position           : absolute;
+      right              : 150px;
+      top                : 0;
+      width              : 50px;
+      height             : 51px;
+      background         : no-repeat url("../img/going-panther.png") @green;
+      background-size    : 89% auto, 100% auto;
+      background-position: 2px 15px;
+      border             : 1px solid @green;
+      border-radius      : 50%;
+    }
   }
-};
 
-.profit__text {
-  width: 60vw;
-  min-height: 86px;
-  font-family: @font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  color: #444444;
-  text-transform: none;
-  margin-left: 20px;
-  padding: 0;
-  position: relative;
-};
+  ;
 
-.profit__link {
-  width: 110px;
-  margin-left: 20px;
-  padding: 0;
-  text-transform: uppercase;
-  color: #000000;
-  position: relative;
-
-  &&::after {
-    content: "";
-    position: absolute;
-    right: 3px;
-    top: 10px;
-    width: 24px;
-    height: 11px;
-    background: no-repeat url("../img/right-arrow.png");
-    background-size: 100% auto;
+  .profit__text {
+    width         : 60vw;
+    min-height    : 86px;
+    font-family   : @font;
+    font-size     : 14px;
+    font-weight   : 400;
+    line-height   : 1.29;
+    color         : #444444;
+    text-transform: none;
+    margin-left   : 20px;
+    padding       : 0;
+    position      : relative;
   }
 
-  &&::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 33px;
-    width: 60vw;
-    height: 1px;
-    background-color: #d9d9d9;
+  ;
+
+  .profit__link {
+    width         : 110px;
+    margin-left   : 20px;
+    padding       : 0;
+    text-transform: uppercase;
+    color         : #000000;
+    position      : relative;
+
+    &&::after {
+      content        : "";
+      position       : absolute;
+      right          : 3px;
+      top            : 10px;
+      width          : 24px;
+      height         : 11px;
+      background     : no-repeat url("../img/right-arrow.png");
+      background-size: 100% auto;
+    }
+
+    &&::before {
+      content         : "";
+      position        : absolute;
+      left            : 0;
+      bottom          : 33px;
+      width           : 60vw;
+      height          : 1px;
+      background-color: #d9d9d9;
+    }
   }
-};
+
+  ;
 
   .profit__link:hover {
-    transition: background-color 1s ease;
+    transition      : background-color 1s ease;
     background-color: @green;
-  };
+  }
 
+  ;
+}
+
+@media(min-width: 768px) {
+  .profit__title {
+    font-size : 36px;
+    align-self: start;
+
+    &&--first::before {
+      background-size    : 52% auto;
+      background-position: 36px 14px;
+      left               : 435px;
+      top                : 20px;
+      width              : 170px;
+      height             : 170px;
+    }
+
+    &&--second::before {
+      background-size    : 88% auto;
+      background-position: 6px 53px;
+      left               : 435px;
+      top                : 20px;
+      width              : 170px;
+      height             : 170px;
+    }
+  }
+
+  .profit__text {
+    width      : 300px;
+    min-height : 88px;
+    font-size  : 16px;
+    text-align : left;
+    line-height: 1.5;
+  }
+
+  .profit__link {
+    width: 120px;
+
+    &&::before {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+
+  .profit__flex-wrapper {
+    flex-direction: row;
+    flex-wrap     : wrap;
+  }
+
+  .profit__flex-block {
+    width     : 570px;
+    min-height: 372px;
+    padding   : 0;
+  }
+
+  .profit__title {
+    align-self: center;
+    margin    : 80px 0 75px 0;
+
+    &&--first::before {
+      width              : 115px;
+      height             : 100px;
+      left               : -140px;
+      top                : -35px;
+      background-position: 25px 6px;
+    }
+
+    &&--second::before {
+      width              : 115px;
+      height             : 100px;
+      left               : -140px;
+      top                : -35px;
+      background-position: 5px 30px;
+    }
+  }
+
+  .profit__text {
+    width     : 462px;
+    min-height: 64px;
+    padding   : 0 0 0 20px;
+  }
+
+  .profit__link {
+    width     : 106px;
+    min-height: 18px;
+    padding   : 0 0 0 20px;
+
+    &&::after {
+      left: 120px;
+
+    }
+
+  }
+}
