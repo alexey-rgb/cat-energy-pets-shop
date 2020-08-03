@@ -11,11 +11,14 @@
 </head>
 
 <body>
+
   <header class="page-header">
     <h1 class="visually-hidden">
       Навигация по сайту
     </h1>
+
     <!-- Логотипы в шапке страницы -->
+
     <div>
       <svg class="page-header__logo-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 87.64 101.8"
@@ -370,7 +373,9 @@
 		C37.5,27.8,37.5,27.8,37.5,27.8z" />
       </g>
     </svg>
+
     <!-- Навигация по сайту -->
+
     <nav class="page-header__navigation">
       <ul class="page-header__list">
         <li class="page-header__item">
@@ -390,7 +395,9 @@
     </nav>
   </header>
   <main class="main">
+
     <!-- Слоган с зеленым фоном/котом и банкой с питанием и кнопкой 'ПОДОБРАТЬ ПРОГРАММУ' -->
+
     <section class="after-header">
       <h2 class="visually-hidden">
         Раздел содержащий ссылку для перехода на страницу составления рациона питания кота
@@ -417,7 +424,9 @@
         class="after-header__food-box">
     </section>
     <section class="profit">
+
       <!-- Блок преимущества с пантерами -->
+
       <div class="profit__flex-wrapper">
         <div class="profit__flex-block">
           <h2 class="profit__title profit__title--first">
@@ -445,12 +454,14 @@
         </div>
       </div>
     </section>
+
     <!-- Блок с заголовком 'КАК ЭТО РАБОТАЕТ' -->
-    <section class="desription">
+
+    <section class="description">
       <h2 class="description__title">
         Как это работает
       </h2>
-      <ul class="desription__list">
+      <ul class="description__list">
         <li class="description__item">
           Функциональное питание содержит только полезные питательные вещества.
         </li>
@@ -464,13 +475,99 @@
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
       </ul>
+      <pre class="description__border-bottom"></pre>
     </section>
+
+    <!-- Блок с реальным примером похудения и полу-котами -->
+
+    <section class="example">
+      <div class="example__wrapper-first">
+        <h2 class="visually-hidden">
+          Результат правильного питания
+        </h2>
+        <h7 class="example__title">
+          Живой пример
+        </h7>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__result-wrapper">
+          <div class="example__result-block">
+            <span class="example__numbers">
+              5 кг
+            </span>
+            <span class="example__result-title example__result-title--first">
+              снижение веса
+            </span>
+          </div>
+          <div class="example__result-block">
+            <span class="example__numbers">
+              60 дней
+            </span>
+            <span class="example__result-title example__result-title--second">
+              затрачено времени
+            </span>
+          </div>
+        </div>
+        <span class="example__calculation">
+          Затраты на питание:
+          <span class="example__calculation-substring">
+            15 000 руб.
+          </span>
+        </span>
+      </div>
+      <div class="example__wrapper-second">
+        <div class="example__image-wrapper">
+          <picture>
+            <!-- <source media="(min-width: 1440px)" srcset="img/food-box-desktop@1x.png 1x">
+             -->
+            <source media="(min-width:1440px)" srcset="img/before-desktop.png">
+            <source media="(min-width: 768px)" width="338" heigth="499" srcset="img/fat-cat-tablet.png 1x">
+            <img class="example__image" srcset="img/fat-cat.png" width="311" height="232" alt="Изображение с котом">
+          </picture>
+          <picture>
+            <!-- <source media="(min-width: 1440px)" srcset="img/food-box-desktop@1x.png 1x">-->
+            <!--  <source class="example__image example__image--slim-cat" width="298" heigth="517" media="(min-width: 1440px)"
+              srcset="img/slim-cat-desktop.png 1x"> -->
+            <img class="example__image example__image--slim-cat" srcset="img/slim-cat-tablet.png 1x" width="298"
+              height="517" alt="Изображение с котом">
+          </picture>
+        </div>
+        <div class="example__controller">
+          <div class="example__progressive-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-wrapper">
+      <!-- Яндекс карта -->
+      <iframe class="map-wrapper__context"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A58df9211a69a11b0d14b0865483c7b85ddbf44282ca5bc63f021e12ee89281ab&amp;source=constructor"
+       height="400"  frameborder="0"></iframe>
+
+      <script src="https://api-maps.yandex.ru/2.1.77/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
+      </script>
+    </div>
+    <!-- Блок с контактами -->
+
+    <section class="contacts">
+      <h2 class="visually-hidden">
+        Контактная информация
+      </h2>
+      <h3 class="contacts__title">
+        приглашаем к сотрудничеству дилеров!
+      </h3>
+      <p class="contacts__text">
+        ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург
+      </p>
+    </section>
+
   </main>
-  <!-- <script src="js/index.js">
-  </script> -->
   <script src="js/svg4everybody.min.js">
   </script>
-  <script>
-  </script>
 </body>
+
 </html>

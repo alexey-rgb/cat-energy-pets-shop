@@ -1,0 +1,328 @@
+@media(min-width: 320px) {
+  .example {
+    display         : flex;
+    flex-direction  : column;
+    min-height      : 710px;
+    margin          : 40px 0 0 0;
+    background-color: @gray;
+    font-size       : @font;
+  }
+
+  .example__wrapper-first {
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 33px 0 0 calc((100% - 290px)/2);
+  }
+
+  .example__numbers {
+    font-size  : 24px;
+    line-height: 1;
+    margin     : 8px 0px 10px 0;
+    padding    : 0;
+  }
+
+  .example__title {
+    font-size: 36px;
+  }
+
+  .example__text {
+    width      : 270px;
+    margin     : 30px 0;
+    font-family: Arial, sans-serif;
+    font-size  : 14px;
+    line-height: 1.29;
+  }
+
+  .example__result-title {
+    width           : 65px;
+    font-family     : Arial, sans-serif;
+    font-size       : 12px;
+    line-height     : 1;
+    display         : block;
+    position        : absolute;
+    top             : 38px;
+    background-color: @gray;
+    text-align      : center;
+  }
+
+  .example__result-wrapper {
+    display        : flex;
+    width          : 93%;
+    height         : 56px;
+    justify-content: space-between;
+  }
+
+  .example__result-block {
+    display        : flex;
+    justify-content: center;
+    padding        : 0;
+    width          : 124px;
+    border-radius  : 3px;
+    border         : solid 1px #cdcdcd;
+    position       : relative;
+    padding        : 0;
+    text-align     : center;
+  }
+
+  .example__image {
+    margin : 0 auto;
+    display: block;
+  }
+
+  .example__image--slim-cat {
+    display: none;
+  }
+
+  .example__controller {
+    width        : 84px;
+    height       : 14px;
+    border-radius: 6px;
+    border       : solid 1px #cdcdcd;
+    margin       : 40px auto 0;
+    display      : block;
+    position     : relative;
+
+    &&::before {
+      content  : "БЫЛО";
+      position : absolute;
+      width    : 36px;
+      height   : 15px;
+      font-size: 16px;
+      right    : 100px;
+      bottom   : 8px;
+
+    }
+
+    &&::after {
+      content  : "СТАЛО";
+      position : absolute;
+      width    : 36px;
+      height   : 15px;
+      font-size: 16px;
+      left     : 100px;
+      bottom   : 8px;
+    }
+  }
+
+  .example__progressive-bar {
+    width           : 45px;
+    height          : 10px;
+    margin          : 1px 0 2px 0;
+    background-color: lightgreen;
+  }
+
+  .example__calculation {
+    margin: 40px auto 45px;
+  }
+}
+
+@media(min-width: 400px) {
+  .example__text {
+    width: 300px;
+  }
+}
+
+@media(min-width: 500px) {
+  .example__text {
+    width: 400px;
+  }
+
+  .example__calculation {
+    margin-left: calc((100% - 300px)/2);
+  }
+}
+
+@media(min-width: 600px) {
+  .example__text {
+    width: 430px;
+  }
+
+  .example__result-wrapper {
+    max-width: 370px;
+  }
+}
+
+@media(min-width: 768px) {
+  .example {
+    margin    : 0;
+    min-height: 580px;
+    background: linear-gradient(to bottom, #fff 0, #fff 57%, #ededed 26%, #f6f6f6 64%, #f6f6f6 75%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__result-wrapper {
+    width: 48%;
+  }
+
+  .example__wrapper-first {
+    max-width: 800px;
+    margin   : 33px 0 44px calc((100% - 694px)/2);
+  }
+
+  .example__result-block {
+    width: 162px;
+  }
+
+  .example__result-title {
+    font-size       : 14px;
+    background-color: #ffffff;
+    top             : 46px;
+  }
+
+  .example__result-title--first {
+    width: 112px;
+  }
+
+  .example__result-title--second {
+    width: 145px
+  }
+
+  .example__text {
+    width      : 674px;
+    margin     : 60px 0 56px 0;
+    font-size  : 16px;
+    line-height: 1.5;
+  }
+
+  .example__calculation {
+    margin   : 0 0 0 200px;
+    width    : 155px;
+    font-size: 20px;
+  }
+
+
+  .example__calculation-substring {
+    display: block;
+    margin : 0 0 0 68px;
+  }
+
+  .example__image-wrapper {
+    margin  : 0 0 0 calc((100% - 700px)/2);
+    position: relative;
+  }
+
+  .example__image {
+    display: unset;
+
+    &&--slim-cat {
+      display : inline;
+      position: absolute;
+      top     : 2px;
+    }
+  }
+
+  .example__controller {
+    width           : 428px;
+    height          : 2px;
+    margin          : 1px 0 2px 0;
+    background-color: #dcdcdc;
+    margin          : -42px auto;
+    display         : block;
+    position        : relative;
+
+    &&::before {
+      content  : "БЫЛО";
+      position : absolute;
+      width    : 36px;
+      height   : 15px;
+      font-size: 20px;
+      right    : 445px;
+      bottom   : 2px;
+    }
+
+    &&::after {
+      content  : "СТАЛО";
+      position : absolute;
+      width    : 36px;
+      height   : 15px;
+      font-size: 20px;
+      left     : 445px;
+      bottom   : 0px;
+    }
+  }
+
+  .example__progressive-bar {
+    width           : 34px;
+    height          : 34px;
+    box-shadow      : 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border          : solid 1px #cdcdcd;
+    border-radius   : 50%;
+    background-color: #ffffff;
+    margin          : -16px 0 0 12px;
+    position        : relative;
+
+    &&::before {
+      content         : "";
+      width           : 2px;
+      height          : 2px;
+      position        : absolute;
+      background-color: grey;
+      top             : 15px;
+      left            : 15px;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .example {
+    flex-direction : row;
+    background     : linear-gradient(to bottom, #fff 0, #fff 28%, #ededed 26%, #f6f6f6 64%, #f6f6f6 75%);
+    justify-content: space-around;
+    min-height     : 580px;
+  }
+
+  .example__text {
+    width : 800px;
+    margin: 140px 0 80px 0;
+  }
+
+  .example__image-wrapper {
+    position: relative;
+  }
+
+  .example__image {
+    position: unset;
+
+    &&--slim-cat {
+      top: -10px;
+    }
+  }
+
+  .example__result-wrapper {
+    width: 84%;
+  }
+
+  .example__result-title {
+    background-color: @gray;
+
+    &&--first {
+      width: 110px;
+    }
+
+    &&--second {
+      width: 100px;
+    }
+  }
+
+  .example__wrapper-first {
+    max-width: 435px;
+    margin   : 0;
+  }
+
+  .example__calculation {
+    margin: 45px 0 0 0;
+    width : 320px;
+  }
+
+  .example__calculation-substring {
+    display: unset;
+  }
+
+  .example__controller {
+    margin-top: 48px;
+  }
+}
