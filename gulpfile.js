@@ -85,7 +85,7 @@ gulp.task("copy", function () {
         base: "source",
       }
     )
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("docs"));
 });
 
 gulp.task("server", function () {
